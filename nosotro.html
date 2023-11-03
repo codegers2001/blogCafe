@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Blog Café - Lincoln</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- prefetch -->
+    <link rel="prefetch" href="nosotro.html" as="document">
+
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no__margin centrar__texto">Blog<span class="logo__bold">deCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotro.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no__margin">Blog de café con consejos y cursos</h2>
+            <p class="no__margin ">Aprende de los expertos con las mejores recetas y consejos.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h3 class="centrar__texto">Sobre Nosotros</h3>
+        <div class="nosotros">
+            <div class="nosotros__imagen">
+                <img loading="lazy" src="img/nosotros.jpg" alt="imagen nosotros">
+            </div>
+            <div class="nosotros__texto">
+                <p class="nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quas consectetur eaque facilis quia delectus, sed, corrupti quibusdam optio voluptas necessitatibus rerum adipisci explicabo. Quaerat laboriosam dolore nam dolores placeat?</p>
+                <p class="nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quas consectetur eaque facilis quia delectus, sed, corrupti quibusdam optio voluptas necessitatibus rerum adipisci explicabo. Quaerat laboriosam dolore nam dolores placeat?</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no__margin centrar__texto">Blog<span class="logo__bold">deCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotro.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modernizer.js"></script>
+</body>
+</html>

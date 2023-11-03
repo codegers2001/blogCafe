@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    /* tipografia */
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteHeadings: 'PT Sans', sans-serif;
+
+    /* colores */
+    --primario: #784d3c;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* globales */
+
+/* A class that is used to style the container. */
+.container {
+    max-width: 120rem; /* tambien puede ser width(90%, 120rem)*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* A selector that selects all the `img` elements. */
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeadings);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+/* A heading. */
+h4 {
+    font-size: 2.8rem;
+}
+
+/* A selector that selects all the `img` elements. */
+img {
+    max-width: 100%;
+}
+
+/* utilidades */
+
+/* Removing the margin from the element. */
+.no__margin {
+    margin: 0;
+}
+
+/* Removing the padding from the element. */
+.no__padding {
+    padding: 0;
+}
+
+/* Centering the text. */
+.centrar__texto {
+    text-align: center;
+}
+
+/* header */
+
+/* A class that is used to style the header. */
+.header {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60rem;
+}
+
+/* A class that is used to style the header text. */
+.header__texto {
+    color: var(--blanco);
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+
+
+/* A class that is used to style the navigation bar. */
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* A class that is used to style the logo. */
+.logo {
+    color: var(--blanco);
+}
+
+/* A class that is used to style the logo name. */
+.logo__nombre {
+    font-weight: 400;
+}
+
+/* A class that is used to style the logo name. */
+.logo__bold {
+    font-weight: 700;
+}
+
+/* Making the navigation links appear in a row when the screen size is 768px or more. */
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+    }
+
+    .navegacion__enlace {
+        margin-right: 2rem;
+        /* hice esto en lugar de gap porque no soporta mi navegador */
+    }
+}
+
+/* A class that is used to style the navigation link. */
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+/* Making the navigation links appear in a row when the screen size is 768px or more. */
+@media (min-width: 768px) {
+    .contenedor__principal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+/* A class that is used to style the blog entry. */
+.blog__entrada {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+/* Removing the border and margin from the last blog entry. */
+.blog__entrada:last-of-type {
+    border: none;
+    margin-bottom: none;
+}
+
+/* A class that is used to style the blog link. */
+.blog__enlace {
+    display: block;
+    font-family: var(--fuenteHeadings);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.blog__enlace:hover {
+    cursor: pointer;
+}
+
+/* Making the blog link appear in a row when the screen size is 768px or more. */
+@media (min-width: 768px) {
+    .blog__enlace {
+        display: inline-block;
+    }
+}
+
+/* A class that is used to style the blog link. */
+.blog__enlace--primario {
+    background-color: var(--negro);
+}
+
+/* A class that is used to style the blog link. */
+.blog__enlace--secundario {
+    background-color: var(--primario);
+}
+
+/* A class that is used to style the sidebar courses. */
+.sidebar__cursos {
+    list-style: none;
+}
+
+/* A class that is used to style the sidebar courses. */
+.sidebar__widgetCurso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+/* Removing the border and margin from the last blog entry. */
+.sidebar__widgetCurso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+/* A class that is used to style the sidebar courses. */
+.sidebar__cursoLabel, .curso__label {
+    font-weight: 700;
+    font-family: var(--fuenteHeadings);
+}
+
+/* Styling the sidebar courses. */
+.sidebar__cursoInfo, .curso__info {
+    font-weight: 400;
+}
+
+/* Styling the sidebar courses. */
+.sidebar__cursoLabel, .sidebar__cursoInfo {
+    font-size: 2rem;
+}
+
+/* A class that is used to style the footer. */
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
+/* PAGINA DE SOBRE NOSOTROS */
+
+/* Selecting the `.nosotros__parrafo` element that is a descendant of the `.nosotros__texto` element. */
+.nosotros__texto .nosotros__parrafo {
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    /* estilo grid */
+    .nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+
+    /* estilo flexbox 
+    .nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nosotros__imagen, .nosotros__texto {
+        flex-basis: calc(50% - 3rem);
+    }*/
+}
+
+/* PAGINA DE CURSOS */
+
+/* A class that is used to style the course. */
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+/* Removing the border from the last course. */
+.curso:last-of-type {
+    border: none;
+}
+
+/* Selecting the `.curso__descripcion` element that is a descendant of the `.curso` element. */
+.curso .curso__descripcion {
+    text-align: justify;
+}
+
+/* Making the course appear in a row when the screen size is 768px or more. */
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
+    }
+}
+
+/* PAGINA DE BLOG */
+
+/* Selecting the `.blog__parrafo` element that is a descendant of the `.blog__entrada` element. */
+.blog__parrafo {
+    text-align: justify;
+}
+
+/* PAGINA DE CONTACTO */
+
+/* Styling the background of the contact page. */
+.contacto__fondo {
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40rem;
+}
+
+/* Styling the background of the contact page. */
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+/* A class that is used to style the field. */
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+/* Styling the label. */
+.campo__label {
+    flex: 0 0 9rem;
+    padding-right: 2rem;
+}
+
+/* Styling the field. */
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+    outline: none;
+    padding-left: 1.4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-family: var(--fuenteHeadings);
+}
+
+/* Styling the textarea. */
+.campo__field--textarea {
+    resize: none;
+    height: 20rem;
+}
+
+/* Making the label and the field appear in a column when the screen size is 480px or less. */
+@media (max-width: 480px) {
+    .campo {
+        flex-direction: column;
+    }
+    .campo__label {
+        flex: 0 0 4rem;
+    }
+    
+    .campo .campo__field--textarea {
+        max-width: 100%;
+        padding-bottom: 7rem;
+    }
+} 
+
+/* WEBP */
+
+.webp .header{
+    background-image: url(..img/banner.webp);
+}
+
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}

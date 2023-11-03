@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Blog Café - Lincoln</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- prefetch -->
+    <link rel="prefetch" href="nosotro.html" as="document">
+
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no__margin centrar__texto">Blog<span class="logo__bold">deCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotro.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no__margin">Blog de café con consejos y cursos</h2>
+            <p class="no__margin ">Aprende de los expertos con las mejores recetas y consejos.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h3 class="centrar__texto">Contacto</h3>
+            <div class="contacto__fondo"></div>
+                <form class="formulario">
+                    <div class="campo">
+                        <label for="nombre" class="campo__label">Nombre:</label>
+                        <input type="text" placeholder="Tu nombre" id="nombre" name="nombre" class="campo__field">
+                    </div>
+                    <div class="campo">
+                        <label for="email" class="campo__label">Email:</label>
+                        <input type="email" placeholder="Tu email" id="email" name="email" class="campo__field">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje" class="campo__label">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" class="campo__field campo__field--textarea"></textarea>
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Enviar" class="blog__enlace blog__enlace--primario" aria-label="boton__contacto">
+                    </div>
+            </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no__margin centrar__texto">Blog<span class="logo__bold">deCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotro.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modernizer.js"></script>
+</body>
+</html>
